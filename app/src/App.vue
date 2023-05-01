@@ -14,26 +14,7 @@ export default defineComponent({
     
   },
   setup(){
-    // ~~~~~~~~~~~~~~~~~~~~~~~   1st style  ~~~~~~~~~~~~~~~~~~ //
-
-      // const state = reactive({
-      //   name : "link",
-      //   age  : 25 as string | number
-      // })
-      // state.age = 33
-      // return({
-      //   ...toRefs(state)        
-      // })
-
-      // ~~~~~~~~~~~~~~~~~~~~~~~   2nd style  ~~~~~~~~~~~~~~~~~~ //
-       
-      // const name = ref("link");
-      // const age = ref<string | number>(25);
-      
-      // return ({
-      //   name,
-      //   age
-      //   })
+   
       const jobs = ref<Job[]>([
         { title: 'farm worker', location: 'lon lon ranch', salary: 30000, id: '1' },
         { title: 'quarryman', location: 'death mountain', salary: 40000, id: '2' },
