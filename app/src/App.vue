@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    Hello , {{ name }}
+    <p> {{ jobs[0] }}</p>
   </div>
 </template>
 
@@ -41,7 +41,10 @@ export default defineComponent({
         { title: 'fisherman', location: 'lake hylia', salary: 21000, id: '4' },
         { title: 'prison guard', location: 'gerudo valley', salary: 32000, id: '5' }
       ]);
+
+       return ({ jobs })
     }
+   
 });
 </script>
 
