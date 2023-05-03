@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive, toRefs} from 'vue';
+import { defineComponent, reactive, ref, toRefs} from 'vue';
 
 
 export default defineComponent({
@@ -16,12 +16,20 @@ export default defineComponent({
   setup(){
       // const state = reactive({
       //   name : "link",
-      //   age  : 25
+      //   age  : 25 as string | number
       // })
+      // state.age = 33
       // return({
       //   ...toRefs(state)        
       // })
       
+      const name = ref("link");
+      const age = ref<string | number>(25);
+      
+      return ({
+        name,
+        age
+        })
     }
 });
 </script>
