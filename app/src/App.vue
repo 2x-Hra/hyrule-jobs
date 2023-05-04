@@ -14,13 +14,14 @@ export default defineComponent({
     
   },
   setup(){
-      const state = reactive({
-        name : "link",
-        age  : 25
-      })
-      return({
-        ...toRefs(state)        
-      })
+      // const state = reactive({
+      //   name : "link",
+      //   age  : 25
+      // })
+      // return({
+      //   ...toRefs(state)        
+      // })
+      
     }
 });
 </script>
