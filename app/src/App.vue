@@ -1,11 +1,11 @@
 <template>
   <div class="app">
-    Hello
+    Hello , {{ name }}
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive } from 'vue';
+import { defineComponent, reactive, toRefs} from 'vue';
 
 
 export default defineComponent({
@@ -15,19 +15,16 @@ export default defineComponent({
   },
   setup(){
       const state = reactive({
-        
+        name : "link",
+        age  : 25
+      })
+      return({
+        ...toRefs(state)        
       })
     }
 });
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
