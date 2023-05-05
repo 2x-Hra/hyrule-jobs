@@ -5,14 +5,19 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, reactive } from 'vue';
 
 
 export default defineComponent({
   name: 'App',
   components: {
-
-  }
+    
+  },
+  setup(){
+      const state = reactive({
+        
+      })
+    }
 });
 </script>
 
