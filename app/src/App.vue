@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <p> {{ jobs[0] }}</p>
+    <JobListVue :jobs = "jobs" />
   </div>
 </template>
 
@@ -13,7 +13,7 @@ import Job from "./types/Job"
 export default defineComponent({
   name: 'App',
   components: {
-    
+    JobListVue
   },
   setup(){
    
