@@ -1,6 +1,6 @@
 <template>
     <div>
-        
+
     </div>
 </template>
 
@@ -8,6 +8,12 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
+    props:{
+        jobsList:{
+            required: true,
+            type: Array
+        }
+    },
     setup() {
         
     },

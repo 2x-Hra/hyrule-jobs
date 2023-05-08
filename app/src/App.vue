@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <JobListVue :jobs = "jobs" />
+    <JobListVue :jobsList = "jobs" />
   </div>
 </template>
 
