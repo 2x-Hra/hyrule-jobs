@@ -1,6 +1,8 @@
 <template>
-    <div>
-
+    <div class="job-item">
+        <ul>
+            <li v-for=" job in jobsList" :key="job.id"></li>
+        </ul>
     </div>
 </template>
 
