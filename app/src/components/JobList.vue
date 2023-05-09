@@ -4,7 +4,14 @@
             <li v-for=" job in jobsList" :key="job.id">
                 <h2> {{job.title}} in {{job.location}}</h2>
                 <div class="salary">
-                    
+                    <p> {{ job.salary }}  </p>
+                </div>
+                <div class="description">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Dolorum neque sunt, iusto ab, modi recusandae excepturi aliquam 
+                        aliquid odit praesentium dolorem error? Sit modi excepturi voluptas ratione ex perferendis nemo?
+                    </p>
                 </div>
             </li>
         </ul>
