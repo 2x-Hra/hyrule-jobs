@@ -4,7 +4,7 @@
             <li v-for=" job in jobsList" :key="job.id">
                 <h2> {{job.title}} in {{job.location}}</h2>
                 <div class="salary">
-                    <p> {{ job.salary }}  </p>
+                    <p> {{ job.salary }}  chooghs </p>
                 </div>
                 <div class="description">
                     <p>
