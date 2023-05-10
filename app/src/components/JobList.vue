@@ -39,5 +39,7 @@ export default defineComponent({
     max-width: 960px;
     margin: 40px auto;
   }
-  
+  .job-list ul {
+    padding: 0;
+ 
 </style>
