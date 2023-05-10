@@ -49,5 +49,19 @@ export default defineComponent({
     margin: 16px 0;
     border-radius: 4px;
   }
-  
+  .job-list h2 {
+    margin: 0 0 10px;
+    text-transform: capitalize;
+  }
+  .salary {
+    display: flex;
+  }
+  .salary img {
+    width: 30px;
+  }
+  .salary p {
+    color: #17bf66;
+    font-weight: bold;
+    margin: 10px 4px;
+  }
 </style>
