@@ -41,5 +41,13 @@ export default defineComponent({
   }
   .job-list ul {
     padding: 0;
- 
+  }
+  .job-list li {
+    list-style-type: none;
+    background: white;
+    padding: 16px;
+    margin: 16px 0;
+    border-radius: 4px;
+  }
+  
 </style>
