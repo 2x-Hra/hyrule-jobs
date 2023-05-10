@@ -1,5 +1,5 @@
 <template>
-    <div class="job-item">
+    <div class="job-list">
         <ul>
             <li v-for=" job in jobsList" :key="job.id">
                 <h2> {{job.title}} in {{job.location}}</h2>
@@ -29,13 +29,15 @@ export default defineComponent({
             type: Array as PropType<Job[]>
         }
     },
-    setup() {
-        
-    },
+    
 })
 </script>
 
 
 <style scoped>
-
+  .job-list {
+    max-width: 960px;
+    margin: 40px auto;
+  }
+  
 </style>
