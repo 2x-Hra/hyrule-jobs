@@ -1,5 +1,8 @@
 <template>
   <div class="app">
+    <button>Order by title</button>
+    <button>Order by Salary</button>
+    <button>Order by location</button>
     <JobListVue :jobsList = "jobs" />
   </div>
 </template>
