@@ -28,6 +28,10 @@ export default defineComponent({
         { title: 'prison guard', location: 'gerudo valley', salary: 32000, id: '5' }
       ]);
 
+      const handleClick = ( term : string) => {
+
+      }
+
        return ({ jobs })
     }
    
