@@ -34,7 +34,7 @@ export default defineComponent({
         order.value = term;
       }
 
-       return ({ jobs , handleClick})
+       return ({ jobs , handleClick , order})
     }
    
 });
