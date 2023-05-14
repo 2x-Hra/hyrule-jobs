@@ -19,9 +19,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from 'vue'
-import Job from "../types/Job"
-
+import { defineComponent, PropType } from 'vue';
+import Job from "../types/Job";
+import OrderTerm from "../types/OrderTerm";
 
 export default defineComponent({
     props:{
@@ -31,7 +31,7 @@ export default defineComponent({
         },
         orderTerm:{
           required: true,
-          type: String  as PropType<OrderTerms>
+          type: String  as PropType<OrderTerm>
         }
     },
     

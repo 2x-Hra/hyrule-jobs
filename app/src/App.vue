@@ -11,7 +11,7 @@
 import { defineComponent, reactive, ref, toRefs} from 'vue';
 import JobListVue from './components/JobList.vue';
 import Job from "./types/Job";
-import OrderTerm from "./types/OrderTerms";
+import OrderTerm from "./types/OrderTerm";
 
 
 export default defineComponent({
