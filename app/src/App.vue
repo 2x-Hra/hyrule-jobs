@@ -3,7 +3,7 @@
     <button @click="handleClick('title')">Order by title</button>
     <button @click="handleClick('salary')">Order by Salary</button>
     <button @click="handleClick('location')">Order by location</button>
-    <JobListVue :jobsList = "jobs" />
+    <JobListVue :jobsList = "jobs" :orderTerm = "order" />
   </div>
 </template>
 
