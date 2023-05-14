@@ -22,11 +22,16 @@
 import { defineComponent, PropType } from 'vue'
 import Job from "../types/Job"
 
+
 export default defineComponent({
     props:{
         jobsList:{
             required: true,
             type: Array as PropType<Job[]>
+        },
+        orderTerm:{
+          required: true,
+          type: String  as PropType<OrderTerms>
         }
     },
     
