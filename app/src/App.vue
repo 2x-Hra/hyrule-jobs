@@ -10,7 +10,8 @@
 <script lang="ts">
 import { defineComponent, reactive, ref, toRefs} from 'vue';
 import JobListVue from './components/JobList.vue';
-import Job from "./types/Job"
+import Job from "./types/Job";
+import OrderTerm from "./types/OrderTerms";
 
 
 export default defineComponent({
@@ -28,11 +29,12 @@ export default defineComponent({
         { title: 'prison guard', location: 'gerudo valley', salary: 32000, id: '5' }
       ]);
 
-      const handleClick = ( term : string) => {
-
+      const order = ref<OrderTerm>("title");
+      const handleClick = ( term : OrderTerm) => {
+        order.value = term;
       }
 
-       return ({ jobs })
+       return ({ jobs , handleClick})
     }
    
 });
