@@ -1,5 +1,6 @@
 <template>
     <div class="job-list">
+      <p> Order by {{ orderTerm }}</p>
         <ul>
             <li v-for=" job in jobsList" :key="job.id">
                 <h2> {{job.title}} in {{job.location}}</h2>
