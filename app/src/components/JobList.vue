@@ -35,6 +35,9 @@ export default defineComponent({
           type: String  as PropType<OrderTerm>
         }
     },
+    setup(){
+      const orderedJobs = 
+    }
     
 })
 </script>
