@@ -2,7 +2,7 @@
     <div class="job-list">
       <p> Order by {{ orderTerm }}</p>
         <ul>
-            <li v-for=" job in jobsList" :key="job.id">
+            <li v-for=" job in orderedJobs" :key="job.id">
                 <h2> {{job.title}} in {{job.location}}</h2>
                 <div class="salary">
                     <p> {{ job.salary }}  chooghs </p>
@@ -37,9 +37,12 @@ export default defineComponent({
     },
     setup(props){
       const orderedJobs =  computed( ()=>{
-        return props.jobsList.sort();
+        return [...props.jobsList].sort( (a: Job , b: Job) =>{
+          return a[props.orderTerm] > b[props.orderTerm] ? 1 : -1;
+        }); 
       }
       )
+      return ({ orderedJobs })
     }
     
 })
