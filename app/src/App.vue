@@ -1,6 +1,11 @@
 <template>
   <div class="app">
     <header>
+      <div class="title">
+        <h1>
+          Hyrule Job
+        </h1>
+      </div>
       <div class="order">
         <button @click="handleClick('title')">Order by title</button>
         <button @click="handleClick('salary')">Order by Salary</button>
